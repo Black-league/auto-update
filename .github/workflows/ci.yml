@@ -2,7 +2,7 @@ name: updater
 on:
   schedule:
     # Runs every hour
-    - cron: '10-16 22 * * 1-6'
+    - cron: '10-16 * * * 1-6'
   workflow_dispatch:
 
 
