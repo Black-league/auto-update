@@ -11,9 +11,7 @@ jobs:
   runs-on: ubuntu-latest
   steps:
     - uses: actions/checkout@v2
-    - run: ls
-    - run: cd auto-update
-    - run: index.sh
+    - run:  echo Contributed on record `date` `date +%S` >> text.txt
     - uses: stefanzweifel/git-auto-commit-action@v4
       with:
         commit_message: Apply php-cs-fixer changes
