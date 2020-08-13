@@ -11,6 +11,8 @@ jobs:
   runs-on: ubuntu-latest
   steps:
     - uses: actions/checkout@v2
+    - run: ls
+    - run: cd auto-update
     - run: index.sh
     - uses: stefanzweifel/git-auto-commit-action@v4
       with:
